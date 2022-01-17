@@ -10,6 +10,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "balancereport")
 public class BalanceReport {
+	
+	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
