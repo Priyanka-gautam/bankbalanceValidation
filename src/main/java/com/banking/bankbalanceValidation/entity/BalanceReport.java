@@ -10,29 +10,27 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "balancereport")
 public class BalanceReport {
-	
-	
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-     
-   @Column(name = "userid",  length = 20)
-    private int userid;
-   
-   @Column(name = "accountnumber",  length = 20)
-    private int accountnumber;
-   
-   @Column(name = "receiveraccount",  length = 20)
-    private int receiveraccount;
-   
-   @Column(name = "amount",  length = 20)
-    private int amount;
-   
-   @Column(name = "details",  length = 20)
-    private String details;
-     
-    @Column(name = "time",  length = 220)
-    private String time;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@Column(name = "userid", length = 20)
+	private int userid;
+
+	@Column(name = "accountnumber", length = 20)
+	private int accountnumber;
+
+	@Column(name = "receiveraccount", length = 20)
+	private int receiveraccount;
+
+	@Column(name = "amount", length = 20)
+	private int amount;
+
+	@Column(name = "details", length = 20)
+	private String details;
+
+	@Column(name = "time", length = 220)
+	private String time;
 
 	public BalanceReport() {
 		super();
@@ -86,5 +84,5 @@ public class BalanceReport {
 	public void setTime(String time) {
 		this.time = time;
 	}
-    
+
 }
